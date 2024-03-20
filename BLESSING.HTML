@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  
+ a:hover img {
+      opacity: 0.5;
+    }
+
+    a:hover div {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+	
+	 .image-box {
+            background-color: #fff;
+            overflow: hidden;
+            width: 200px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        .image-box img {
+            width: 100%;
+            height: auto;
+            transition: transform .5s ease;
+        }
+        .image-box img:hover {
+            transform: scale(1.1);
+        }
+        .image-box-text {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+            width: 12%;
+            position: absolute;
+			top: 20%;
+            left: 48;
+			bottom: 38%;
+            opacity: 0;
+            transition: opacity .5s ease;
+        }
+.image-box-text{ bottom:20;}
+
+        .image-box:hover .image-box-text {
+            opacity: 1;
+}
+</style>
+<style>
+.image-box2 {
+            background-color: #fff;
+            overflow: hidden;
+            width: 200px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        .image-box2 img {
+            width: 100%;
+            height: auto;
+            transition: transform .5s ease;
+        }
+        .image-box2 img:hover {
+            transform: scale(1.1);
+        }
+        .image-box2-text {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+            width: 12%;
+            position: absolute;
+			top: 20%;
+            left: 58%;
+			bottom: 48%;
+            opacity: 0;
+            transition: opacity .5s ease;
+        }
+.image-box2-text{ bottom:20;}
+
+        .image-box2:hover .image-box2-text {
+            opacity: 1;
+}
+
+        
+  </style>
+</head>
+<body>
+  <div class="image-box-grid"style="text-align: center;">
+    <div class="image-box"style="display: inline-block; background-color: #eee; padding: 10px;">
+      
+        <img src="BLESSING.PNG" alt="Image 1" width="300">
+        <div style="display: none;">HTML</div>
+		 <div class="image-box-text"><h3>FCO 1<h3></div>
+     </div> 
+      
+	   <div class="image-box2"style="display: inline-block; background-color: #eee; padding: 10px;">
+        <img src="BLESSING.PNG" alt="Image 2" width="300">
+        <div style="display: none;">HTML</div>
+		<div class="image-box2-text">FCO 2</div>
+		</div>
+     
+      
+        <img src="BLESSING.PNG" alt="Image 3" width="300">
+        <div style="display: none;">HTML</div>
+		<div class="image-box-text">FCO 3</div>
+     
+    
+    <div style="display: inline-block; background-color: #eee; padding: 10px;">
+     
+        <img src="BLESSING.PNG" alt="Image 4" width="300">
+        <div style="display: none;">HTML</div>
+			<div class="image-box-text">FCO 4</div>
+      
+      
+        <img src="BLESSING.PNG" alt="Image 5" width="300">
+        <div style="display: none;">HTML</div>
+			<div class="image-box-text">FCO 5</div>
+      
+      
+        <img src="BLESSING.PNG" alt="Image 6" width="300">
+        <div style="display: none;">HTML</div>
+			<div class="image-box-text">FCO 6</div>
+      
+    </div>
+  </div>
+</body>
+</html>

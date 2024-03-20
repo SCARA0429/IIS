@@ -1,0 +1,101 @@
+/* General styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+
+.logo-container{
+	width: 100px;
+}
+
+.logo-container img{
+	width: 100%;
+}
+
+nav ul{
+	
+		list-style: none;
+		display: flex;
+		align-items: center;
+	}
+
+nav li{
+	margin-right: 1rem;
+}
+
+nav a{
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Login and registration styles */
+.login-container, .register-container{
+	background-color: #f2f2f2;
+	padding: 2rem;
+	margin: 2rem auto;
+	max-width: 400px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2, .register-container h2{
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+.login-container form, .register-container form{
+	display: flex;
+	flex-direction: column;
+}
+
+.login-container label, .register-container label{
+	margin-bottom: 0.5rem;
+}
+
+.login-container input, .register-container input{
+	padding: 0.5rem;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 1rem;
+}
+
+.login-container button, .register-container button{
+	background-color: #333;
+	color: #fff;
+	padding: 0.5rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.register-container {
+	display: none;
+}
+
+
+	header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	nav(
+		ul {
+			flex-direction: column;
+		}
+
+		nav li{
+			margin-right: 1rem;
+			margin-bottom: 0.5rem;
+		}
+	}
+}

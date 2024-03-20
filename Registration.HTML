@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Box</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+}
+			
+.logo-container{
+	width: 200px;
+	height: 150px;
+	top: 18%;
+	left: 8%;
+    margin: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.logo-container img{
+	width: 150%;
+	height: 100%;
+}
+
+.Homepic{ 
+	width: 600px;
+	height: 500px;
+    margin: auto;
+    position: absolute;
+	top:100%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.Homepic img{
+	width: 140%;
+	height: 95%;
+}
+  
+        .registration-box {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .registration-box label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .registration-box input[type="text"], .registration-box input[type="email"] {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .registration-box select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .registration-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .registration-box button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+}
+ul{
+	list-style: none;
+}
+
+li{
+	margin-bottom: 0.5rem;
+
+}
+
+header {
+	background-color: #0b3247;
+	color: #fff;
+	padding: 0.2rem;
+	top: 0;
+	left: 0;
+	width: 100%; 
+	z-index: 100;
+	font-size: 30px;
+	 min-height: 10vh;
+	
+}
+
+
+nav{
+	display: flex;
+	justify-content: center;	
+}
+.nav-links {
+    position: absolute;
+    top: 50px;
+    transform: translate(-0%, -50%);
+    display: flex;
+}
+
+.nav-links ul li a {
+		color: #fff;
+		text-decoration: none;
+}
+
+.nav-links ul li:after{
+		content: "";
+		width: 0%;
+		height:	2px;
+		background:  #0fc2ae;
+		display:block;
+		margin:auto;
+		transition: 0.3s;
+} 
+
+.nav-links ul li:hover::after {
+		width: 100%;
+}
+
+nav ul {   
+	display: flex;
+	 list-style-type: none;
+	margin: 0;
+	padding: 10;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+	top: 60%;
+}
+
+
+nav li{
+	margin-right: 1rem;
+	font-size: 1.2rem;
+	
+}
+
+.login-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0b3247; 
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+	position: absolute;
+    top: 6%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    display: flex;
+	width: 90px;
+	text-decoration: none;
+}
+.login-button a {
+text-decoration: none;
+color: #fff
+
+}
+
+.login-button a:hover {
+width: 0%;
+}
+
+.login-button:hover {
+    background-color:#0fc2ae;
+}
+
+.Logo{width: 500px;
+
+}
+
+
+main {
+	padding: 2rem;
+}
+
+footer{
+	background-color: #0b3247;
+	color: #fff;
+	padding: 1rem;
+	text-align: center;
+}
+
+footer p{
+	margin: 0;
+}
+
+    </style>
+</head>
+<header>
+		<nav>
+		<div class="button">
+            <button class="login-button" align="center"><a href="Home.Html #services"> Login </a></button>
+        </div>
+		
+		<div class="nav-links">
+			<ul>
+				<li><a href="Home.Html #home">Home</a></li>
+				<li><a href="Home.Html #services">Services</a></li>
+				<li><a href="Home.Html #about">About</a></li>
+				<li><a href="Home.Html #contact">Contact</a></li>
+			</ul>
+			
+		</nav>
+	</header>
+		
+	<main>
+	<h1 align="center">Integrated <span style="color: #0fc2ae">IT Systems </span>incorporations</h1>
+	
+	<hr width="100%">
+	
+	<div class="logo-container">
+		<img src="IIS_INCpreview.PNG" alt="Logo">
+	</div>
+	
+<body>
+<section>
+<div class="Homepic">
+		<img src="browser-window-displaying-workspace-.PNG" alt="Logo">
+	</div>
+<h2 align="center">Registration Form</h2>
+    <div class="registration-box">
+        <h2 align="center">Registration Form</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+		
+		<label for="name">Maiden name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname">
+		
+		<label for="tickets-booked">Did you book your tickets yet?</label>
+        <select id="tickets-booked" name="tickets-booked">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select>
+
+		<label for="d-number">Date of birth<i>(DD/MM/YYYY)</I>:</label>
+        <input type="text" id="d-number" name="d-number">
+
+        <label for="d-number">ID Number:</label>
+        <input type="text" id="d-number" name="d-number">
+		
+        <label for="cell-phone">Cell Phone Number:</label>
+        <input type="text" id="cell-phone" name="cell-phone">
+		
+		<label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+		
+		<label for="south-africa-friends">Nationality?</label>
+		<input type="text" id="traveling-with" name="traveling-with">
+		
+		<label for="south-africa-friends">Passport/Docuent Number?</label>
+		<input type="text" id="traveling-with" name="traveling-with">
+		
+		<label for="south-africa-friends">Passport Issuing authority?</label>
+		<input type="text" id="traveling-with" name="traveling-with">
+		
+		<label for="tickets-booked">Type of document?</label>
+        <select id="tickets-booked" name="tickets-booked">
+            <option value="Diplomatic">Diplomatic</option>
+            <option value="Offical">Offical</option>
+			<option value="Ordinary Passport">Ordinary Passport</option>
+				<option value="Travel Document">Travel Document</option>
+        </select>
+		
+		<label for="physical-address">country Permanent:</label>
+        <textarea id="physical-address" name="physical-address"></textarea>
+		
+		
+		<label for="physical-address">country Permanent:</label>
+        <textarea id="physical-address" name="physical-address"></textarea>
+		
+		<label for="physical-address">Physical Address residential in permanent country:</label>
+        <textarea id="physical-address" name="physical-address"></textarea>
+	
+        <label for="travel-reason">Why did you choose to travel now?</label>
+        <textarea id="travel-reason" name="travel-reason"></textarea>
+
+        <label for="traveling-with">Who will you be traveling with?</label>
+        <input type="text" id="traveling-with" name="traveling-with">
+		
+		<label for="tickets-booked">Did you book your tickets yet?</label>
+        <select id="tickets-booked" name="tickets-booked">
+            <option value="yes">Yes</option>
+            <optionvalue="no">No</option>
+        </select>
+		
+       <label for="trip-cost">Have you previously done a passport?</label>
+        <input type="text" id="trip-cost" name="trip-cost">
+
+        <label for="stay-length">How long will you be staying in the country?</label>
+        <input type="text" id="stay-length" name="stay-length">
+
+       
+        <label for="work">Employment Status?</label>
+        <input type="text" id="work" name="work">
+
+        <label for="income">How much money do you plan on spending?</label>
+        <input type="text" id="income" name="income">
+
+        <label for="payment"> medical conditions?</label>
+        <input type="text" id="payment" name="payment">
+
+        <label for="house-care">Do you have any medical conditions?</label>
+        <input type="text" id="house-care" name="house-care">
+		
+		<label for="house-care">Do you a criminal record?</label>
+        <input type="text" id="house-care" name="house-care">
+
+        <label for="spouse">Do you have a spouse?</label>
+        <select id="spouse" name="spouse">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="kids">Do you have kids?</label>
+	
+        <select id="kids" name="kids">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="pets">Do you have any pets?</label>
+        <select id="pets" name="pets">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="pet-care">Will your pets, children, and spouse traveling with you?</label>
+        <input type="text" id="pet-care" name="pet-care">
+
+        <button type="submit">Submit</button>
+    </div>
+	</section>
+	<footer>
+		<p align="center">&copy; 2023 Integrated IT Systems incorporations</p>
+	</footer>
+</body>
+</html>

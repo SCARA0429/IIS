@@ -1,0 +1,371 @@
+/* Reset styles */
+body, h1, h2, p, ul, li, a {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.logo-container{
+	width: 200px;
+	height: 150px;
+	top: 19%;
+	left: 8%;
+    margin: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.logo-container img{
+	width: 150%;
+	height: 100%;
+}
+
+
+.logo-container2{
+	width: 300px;
+	height: 250px;
+	top: 80%;
+	left: 15%;
+    margin: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.logo-container2 img{
+	width: 150%;
+	height: 120%;
+}
+
+.Homepic{ 
+	width: 600px;
+	height: 500px;
+    margin: auto;
+    position: absolute;
+	top:110%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.Homepic img{
+	width: 150%;
+	height: 100%;
+}
+/* Global styles */
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #feffff;
+}
+
+a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+h1, h2 {
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+h2{
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+p{
+	font-size: 1rem;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	margin-bottom: 0.5rem;
+
+}
+
+header {
+	background-color: #0b3247;
+	color: #fff;
+	padding: 0.2rem;
+	top: 0;
+	left: 0;
+	width: 100%; 
+	z-index: 100;
+	font-size: 30px;
+	 min-height: 10vh;
+	
+}
+
+nav{
+	display: flex;
+	justify-content: center;	
+}
+
+.nav-links {
+    position: absolute;
+    top: 50px;
+    transform: translate(-0%, -50%);
+    display: flex;
+}
+
+.nav-links ul li a {
+		color: #fff;
+		text-decoration: none;
+}
+
+.nav-links ul li:after{
+		content: "";
+		width: 0%;
+		height:	2px;
+		background:  #0fc2ae;
+		display:block;
+		margin:auto;
+		transition: 0.3s;
+} 
+
+.nav-links ul li:hover::after {
+		width: 100%;
+}
+
+nav ul {   
+	display: flex;
+	 list-style-type: none;
+	margin: 0;
+	padding: 10;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+	top: 60%;
+}
+
+
+nav li{
+	margin-right: 1rem;
+	font-size: 1.2rem;
+	
+}
+
+.login-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0b3247; 
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+	position: absolute;
+    top: 6%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    display: flex;
+	width: 90px;
+}
+.login-button a {
+color: #fff
+}
+
+.login-button a:hover {
+width: 0%;
+}
+
+
+.login-button:hover {
+    background-color:#0fc2ae;
+}
+
+.Logo{width: 500px;
+
+}
+
+
+main {
+	padding: 2rem;
+}
+
+section {
+	margin-bottom: 2rem;
+}
+
+section h2{
+	margin-bottom: 1rem;
+}
+
+section ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section li{
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+}
+
+
+
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form label{
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+form input, form textarea{
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+form input:focus, form textarea:focus{
+	outline:;
+	box-shadow: 0 0 2px 1px #0fc2ae;
+}
+
+form input{type="submit">
+	background-color: #0fc2ae;
+	color: #000;
+	padding: 0.5rem;
+	border: none;
+	cursor: auto;
+}
+
+
+footer{
+	background-color: #0b3247;
+	color: #fff;
+	padding: 1rem;
+	text-align: center;
+}
+
+footer p{
+	margin: 0;
+}
+
+
+ a:hover img {
+      opacity: 0.5;
+    }
+
+ a:hover div {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #0fc2ae;
+      color: #0fc2ae;
+      padding: 10px;
+      border-radius: 5px;
+    }
+	
+	
+/* Login and registration styles */
+.login-container, .register-container{
+	background-color: #f2f2f2;
+	padding: 2rem;
+	margin: 2rem auto;
+	max-width: 400px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2, .register-container h2{
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+.login-container form, .register-container form{
+	display: flex;
+	flex-direction: column;
+}
+
+.login-container label, .register-container label{
+	margin-bottom: 0.5rem;
+}
+
+.login-container input, .register-container input{
+	padding: 0.5rem;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 1rem;
+}
+
+.login-container button, .register-container button{
+	background-color: #333;
+	color: #fff;
+	padding: 0.5rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.register-container {
+	display: none;
+}
+
+
+	header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	nav(
+		ul {
+			flex-direction: column;
+		}
+
+		nav li{
+			margin-right: 1rem;
+			margin-bottom: 0.5rem;
+		}
+	}
+}
+
+services{
+	justify-content: center;
+    align-items: center;
+    gap: 30px;
+	transform: translate(-0%, -50%);
+}
+
+.Icons {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100px;
+			width:100%;
+		}
+.Icons ion-icon {
+			font-size: 3em;
+			margin: 0 10px;
+		}
+		
+}
+.Icons a {
+			margin: 0 10px;
+			color: #333;
+			text-decoration: none;
+		}
+.Icons ion-icon {
+			font-size: 3em;
+		}
+	
+
